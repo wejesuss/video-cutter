@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #F0F0F0;
+    --background-complement: #EBEBEB;
+    --white: #FCFCFC;
+    --text-primary: #707070;
+    --text-secondary: #B0B0B0;
+    --button-background: #8A6353;
+    --text-button: #fefefe;
+    --input-background: #BDAFAA;
+    --input-text: #464114;
+}
+
+html, body {
+    background-color: var(--background);
+    color: var(--text-primary);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-size: 3.2rem;
+}
+
+p, a, button {
+    color: var(--text-secondary);
+}
+
+html {
+    font-size: 46.5%;
+}
+
+.video-cutter {
+    width: 90vw;
+    margin: 0 auto;
+    height: 90vh;
+    background: var(--background-complement);
+    display: flex;
+    flex-direction: column;
+}
+
+.video-cutter h1 {
+    margin: 2rem;
+}
+
+main {
+    margin-top: 4rem;
+    flex: 1;
+}
+
+section,
+form,
+form fieldset {
+    height: 100%;
+}
+
+form legend {
+    font-size: 2rem;
+    text-align: right;
+    margin-bottom: 2.4rem;
+    padding-right: .8rem;
+    font-weight: 600;
+}
+
+form .button {
+    width: 20rem;
+    height: 4rem;
+    background: var(--button-background);
+    color: var(--text-button);
+}
+
+form .input-block,
+form .input-submit {
+    display: flex;
+    align-items: center;
+}
+
+form .input-block label {
+    margin-right: 1.6rem;
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
+form .input-block input {
+    background-color: var(--input-background);
+    font-size: 1.8rem;
+    color: var(--input-text);
+    margin-right: .8rem;
+    width: 10rem;
+    padding: 0 .8rem;
+    height: 2.4rem;
+    outline: none;
+    text-align: center;
+}
+
+form .input-block.file,
+form .input-submit {
+    position: relative;
+    justify-content: center;
+}
+
+form .input-block.file button {
+    pointer-events: none;
+}
+
+form .input-block.file input {
+    position: absolute;
+    opacity: 0;
+    padding: 0;
+    width: 20rem;
+    height: 4rem;
+}
+
+form #preview {
+    margin: 2.4rem 0 4rem;
+    text-align: center;
+}
+
+form #preview video {
+    width: 100%;
+    max-width: 600px;
+}
+
+form .time {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+
+form .input-submit input:disabled {
+    filter: grayscale(1);
+}
+
+form .message {
+    margin: 2.4rem;
+    text-align: center;
+    color: #e46464;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 375px) {
+    h1, h2, h3, h4 {
+        font-size: 2.8rem;
+    }
+
+    .video-cutter {
+        width: 95vw;
+        height: 100vh;
+    }
+
+    form #preview {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    form legend {
+        font-size: 1.6rem;
+    }
+
+    form .input-block label,
+    form .input-block input {
+        font-size: 1.6rem;
+    }
+
+    form .message {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 900px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 2.8rem;
+    }
+
+    main {
+        margin-top: 0;
+    }
+
+    form legend {
+        margin-bottom: 0;
+        font-size: 1.8rem;
+    }
+
+    form #preview {
+        margin-bottom: 2.8rem;
+    }
+
+    form .time {
+        margin-bottom: 2.4rem;
+    }
+
+    form .input-block label,
+    form .input-block input {
+        font-size: 1.6rem;
+    }
+
+    form .message {
+        font-size: 1.4rem;
+        margin: 1.4rem;
+    }
+}
+
+@media (min-width: 1500px) {
+    html {
+        font-size: 45.5%;
+    }
+
+    form .input-block input {
+        font-size: 1.8rem;
+        height: 2.6rem;
+    }
+    
+    form .input-block.file button,
+    form .input-block.file input {
+        width: 22rem;
+        height: 5rem;
+        font-size: 1.8rem;
+    }
+
+    form .input-submit input {
+        font-size: 1.8rem;
+    }
+
+    form #preview video {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1700px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (min-width: 1900px) {
+    html {
+        font-size: 75.5%;
+        zoom: 1.2;
+    }
+}
+
+@media (min-width: 2500px) {
+    html {
+        font-size: 80.5%;
+        zoom: 1.2;
+    }
+}
