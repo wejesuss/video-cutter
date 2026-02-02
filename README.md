@@ -38,7 +38,7 @@ ___
 
 ## :information_source: About
 
-An simple application to cut your videos using ffmpeg.
+A simple application to cut your videos using ffmpeg.
 
 ## :interrobang: Reason
 
@@ -52,7 +52,7 @@ If you read the [About][about] you already know that I was not successful, my in
 4. Recreate the file header
 5. Join all chunks
 
-Unfortunately, the information about `.mp4` file headers is not public and free, and I didn't want to spend a lot of time on this project (there are others I want to do), so I choose to use [FFmpeg][ffmpeg] and leave the first idea (the pseudo-code above) for the future.
+Unfortunately, the information about `.mp4` file headers is not public and free, and I didn't want to spend a lot of time on this project (there are others I want to do), so I chose to use [FFmpeg][ffmpeg] and leave the first idea (the pseudo-code above) for the future.
 
 [FFmpeg][ffmpeg] would basically do what I wanted to do on my own.
 
@@ -83,10 +83,10 @@ Then you can:
 1. Clone this repository
     ```bash
     $ git clone https://github.com/wejesuss/video-cutter && cd video-cutter
-    # You can also download the zip in this page
+    # You can also download the zip on this page
     ```
 
-2. Install Dependecies and Run
+2. Install Dependencies and Run
     ```bash
     $ npm install
     # start the server (development)
@@ -110,7 +110,7 @@ Your server should be running on `http://localhost:3333/`
         ```
 
     2. Using the website
-        - You just need to click the 'Fork' button on the top of [this page][this-page]
+        - You only need to click the 'Fork' button at the top of [this page][this-page]
 
 2. Clone your fork
     ```bash
